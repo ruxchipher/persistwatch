@@ -10,7 +10,7 @@ always a systemd unit or a timer. `persistwatch` reads those files and tells you
 which ones do not look like something a package manager installed.
 
 I wrote this while working through the Linux side of my
-[purple-team-journey](https://github.com/Siddique-12300983/purple-team-journey)
+[purple-team-journey](https://github.com/ruxchipher/purple-team-journey)
 lab. Dropping a unit in `/etc/systemd/system` takes one command, so I wanted a
 tool that does the first pass over those files instead of me reading all of
 them by eye.
@@ -52,7 +52,7 @@ hours ago" starts to matter.
 None needed. Python 3.9 or newer, standard library only.
 
 ```sh
-git clone https://github.com/Siddique-12300983/persistwatch.git
+git clone https://github.com/ruxchipher/persistwatch.git
 cd persistwatch
 python3 -m persistwatch --list-rules
 ```
@@ -232,12 +232,12 @@ own files in a temp directory so they do not depend on what git checked out.
 
 ## Related work of mine
 
-- [log-analyzer](https://github.com/Siddique-12300983/log-analyzer) finds the
+- [log-analyzer](https://github.com/ruxchipher/log-analyzer) finds the
   brute force that got the attacker in.
 - `persistwatch` finds how they stayed.
-- [sigma-detection-rules](https://github.com/Siddique-12300983/sigma-detection-rules)
+- [sigma-detection-rules](https://github.com/ruxchipher/sigma-detection-rules)
   turns that into SIEM rules.
-- [attack-coverage-map](https://github.com/Siddique-12300983/attack-coverage-map)
+- [attack-coverage-map](https://github.com/ruxchipher/attack-coverage-map)
   shows which ATT&CK techniques all of the above actually cover.
 
 ## License
@@ -249,5 +249,5 @@ MIT. See [LICENSE](LICENSE).
 Built by **ruxchipher** (Md Abu Bakar Siddique), second-year cyber security
 student working toward a purple team role.
 [ruxchipher.com](https://ruxchipher.com) ·
-[GitHub](https://github.com/Siddique-12300983) ·
+[GitHub](https://github.com/ruxchipher) ·
 [LinkedIn](https://linkedin.com/in/siddiqueabu)
